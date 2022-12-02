@@ -1,8 +1,17 @@
-import NavBar from './components'
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Page from "./components/Page";
+import Footer from "./Footer";
 
 function App() {
+  const [page, setPage] = useState("AboutMe");
+
   return (
-   <h1>Nathan's Portfolio</h1>
+    <>
+      <Header setPage={setPage}/>
+      <Page currentPage={page} />
+      <Footer/>
+    </>
   );
 }
 
