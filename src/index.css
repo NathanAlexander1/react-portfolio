@@ -21,5 +21,24 @@ main {
 
 .navBarLi {
     list-style: none;
+    
 }
 
+.nav-link-highlighted{
+    background-color: blue;
+}
+
+.ulForCards {
+    display: flex;
+    justify-content:space-evenly;
+    width:100vw;
+    flex-wrap: wrap;
+}
+
+.projList{
+    list-style: none;
+}
+
+/* .projImg {
+    height: 10%;
+} */

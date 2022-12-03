@@ -17,6 +17,7 @@ function page(props) {
       return <Resume />;
     }
   };
+
   return <div>{renderPage()}</div>;
 }
 
