@@ -42,3 +42,8 @@ main {
 /* .projImg {
     height: 10%;
 } */
+
+.footerLinks{
+    display: flex;
+    justify-content: space-evenly;
+}
