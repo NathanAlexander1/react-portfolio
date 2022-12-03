@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+main {
+   
+    max-width: 90%;
+    width: 100%;
+  }
+
+.placeholderImg {
+    width:100vw;
+}
+
+.navBarUl {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBarLi {
+    list-style: none;
+}
+
