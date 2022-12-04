@@ -43,6 +43,11 @@ main {
     height: 10%;
 } */
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
 .footerLinks{
     display: flex;
     justify-content: space-evenly;

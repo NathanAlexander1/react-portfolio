@@ -2,6 +2,10 @@ import React from "react";
 import placeholder from "../assets/placebear.png";
 import zooGame from "../assets/zoo-animal-game.png";
 import allEvents from "../assets/allEvents.png";
+import weatherApp from "../assets/weather-app.png";
+import noteTaker from "../assets/notetaker.png";
+import workScheduler from "../assets/workday-scheduler.png";
+import triviaProject from "../assets/trivia-project.png";
 import Card from "react-bootstrap/Card";
 
 const projects = [
@@ -22,38 +26,38 @@ const projects = [
     techUsed: "placeholder"
   },
   {
-    image: placeholder,
-    projectName: "IDK YET!",
+    image: weatherApp,
+    projectName: "Weather Dashboard",
     description:
-      "This is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicatioThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicatioThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling application",
-    deploymentLink: "placeholder for deployment",
-    gitHubLink: "placeholder for GitHubplaceholder for GitHub",
-    techUsed: "placeholder"
+      "Search cities and get up-to-the-minute weather information plus 5-day forecast!",
+    deploymentLink: "https://nathanalexander1.github.io/weather-dashboard/",
+    gitHubLink: "https://github.com/NathanAlexander1/weather-dashboard",
+    techUsed: "Weather API, Local Storage, JS, CSS, HTML"
   },
   {
-    image: zooGame,
-    projectName: "Zoo Animal Game",
-    description: "This is a fun and educational game",
-    deploymentLink: "https://felishayumacias.github.io/Zoo-Animal-Game/",
-    gitHubLink: "https://github.com/FelishaYuMacias/Zoo-Animal-Game",
-    techUsed: "placeholder"
+    image: noteTaker,
+    projectName: "Notetaker App",
+    description: "Keep track of your to-do list with this dynamic notetaker application!",
+    deploymentLink: "https://note-taker-nathanalexander1.herokuapp.com/notes",
+    gitHubLink: "https://github.com/NathanAlexander1/Note-Taker",
+    techUsed: "NPM, Express, UUID"
   },
   {
-    image: allEvents,
-    projectName: "E-vents",
-    description: "This is an event scheduling application",
-    deploymentLink: "https://event-planner-bnnr.herokuapp.com/",
-    gitHubLink: "https://github.com/24rgraham/event-planner-project",
-    techUsed: "placeholder"
+    image: workScheduler,
+    projectName: "Workday Scheduler",
+    description: "Organize your day with this workday scheduler application! Past, present and future tasks are color coded based on time!",
+    deploymentLink: "https://nathanalexander1.github.io/work-day-scheduler/",
+    gitHubLink: "https://github.com/NathanAlexander1/work-day-scheduler",
+    techUsed: "HTML, CSS, JS, Local Storage"
   },
   {
-    image: placeholder,
-    projectName: "IDK YET!",
+    image: triviaProject,
+    projectName: "Bug Trivia",
     description:
-      "This is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicatioThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicatioThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling applicationThis is an event scheduling application",
-    deploymentLink: "placeholder for deployment",
-    gitHubLink: "placeholder for GitHubplaceholder for GitHub",
-    techUsed: "placeholder"
+      "Have a fun time and learn all about bugs with this fun trivia game!",
+    deploymentLink: "https://nathanalexander1.github.io/trivia-project/",
+    gitHubLink: "https://github.com/NathanAlexander1/trivia-project",
+    techUsed: "HTML, CSS, JS, Local Storage"
   },
 ];
 
@@ -63,7 +67,7 @@ function project() {
       <li className="projList" key={i}>
         <Card style={{ width: '18rem'} }>
           <div>
-          <Card.Img className="projImg" variant="top" src = {p.image} height="280"/>
+          <Card.Img className="projImg border" variant="top" src = {p.image} height="280"/>
           
           </div>
           <Card.Body>
