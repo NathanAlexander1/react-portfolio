@@ -64,7 +64,7 @@ function project() {
   const cards = projects.map((p, i) => {
     return (
       <li className="projList" key={i}>
-        <Card style={{ width: '18rem'} }>
+        <Card style={{ width: '30rem'} }>
           <div>
           <Card.Link target="_blank" href={p.deploymentLink}>
           <Card.Img className="projImg border" variant="top" src = {p.image} height="280"/>

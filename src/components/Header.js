@@ -7,7 +7,7 @@ function header(props) {
     <div>
     <h1>Nathan's Portfolio</h1>
     <img className="placeholderImg" src={banner} alt="mountains"/>
-    <NavBar setPage ={props.setPage}/> 
+    <NavBar setPage ={props.setPage} currentPage={props.currentPage} /> 
     </div>
   )
 }

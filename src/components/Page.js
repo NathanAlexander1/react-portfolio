@@ -1,9 +1,9 @@
+import React from 'react';
+// import NavBar from './NavBar';
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
 import ContactInfo from "./ContactInfo";
 import Resume from "./Resume";
-
-import React from "react";
 
 function page(props) {
   const renderPage = () => {
