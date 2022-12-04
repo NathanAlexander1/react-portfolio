@@ -1,11 +1,10 @@
 import React from "react";
-import placeholder from "../assets/placebear.png";
-import zooGame from "../assets/zoo-animal-game.png";
-import allEvents from "../assets/allEvents.png";
-import weatherApp from "../assets/weather-app.png";
-import noteTaker from "../assets/notetaker.png";
-import workScheduler from "../assets/workday-scheduler.png";
-import triviaProject from "../assets/trivia-project.png";
+import zooGame from "../assets/projects/zoo-animal-game.png";
+import allEvents from "../assets/projects/allEvents.png";
+import weatherApp from "../assets/projects/weather-app.png";
+import noteTaker from "../assets/projects/notetaker.png";
+import workScheduler from "../assets/projects/workday-scheduler.png";
+import triviaProject from "../assets/projects/trivia-project.png";
 import Card from "react-bootstrap/Card";
 
 const projects = [
@@ -40,7 +39,7 @@ const projects = [
     description: "Keep track of your to-do list with this dynamic notetaker application!",
     deploymentLink: "https://note-taker-nathanalexander1.herokuapp.com/notes",
     gitHubLink: "https://github.com/NathanAlexander1/Note-Taker",
-    techUsed: "NPM, Express, UUID"
+    techUsed: "NPM, Express, UUID, mySQL"
   },
   {
     image: workScheduler,
@@ -67,7 +66,9 @@ function project() {
       <li className="projList" key={i}>
         <Card style={{ width: '18rem'} }>
           <div>
+          <Card.Link target="_blank" href={p.deploymentLink}>
           <Card.Img className="projImg border" variant="top" src = {p.image} height="280"/>
+          </Card.Link>
           
           </div>
           <Card.Body>

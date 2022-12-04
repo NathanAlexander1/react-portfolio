@@ -1,7 +1,7 @@
 import React from "react";
-import gitHubImage from "../assets/ghImage.png"
-import linkedInImage from "../assets/linkedIn.png"
-import stackOverflowImage from "../assets/stackoverflow.png"
+import gitHubImage from "../assets/platformImgs/ghImage.png"
+import linkedInImage from "../assets/platformImgs/linkedIn.png"
+import stackOverflowImage from "../assets/platformImgs/stackoverflow.png"
 
 
 function footer() {
