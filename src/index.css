@@ -8,10 +8,13 @@ main {
    
     max-width: 90%;
     width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
   }
 
 .placeholderImg {
-    width:100vw;
+    width:100%;
 }
 
 .navBarUl {
@@ -46,6 +49,23 @@ main {
 .contact-form{
     display: flex;
     flex-direction: column;
+}
+
+.resumeDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proficiencies{
+    display: flex;
+}
+
+.proficiencies div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
 
 .footerLinks{
