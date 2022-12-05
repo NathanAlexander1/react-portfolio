@@ -29,17 +29,6 @@ function NavBar(props) {
 
         <li
           className={
-            props.currentPage === "ContactInfo" ? "nav-link active" : "nav-link"
-          }
-          onClick={() => {
-            props.setPage("ContactInfo");
-          }}
-        >
-          ContactInfo
-        </li>
-
-        <li
-          className={
             props.currentPage === "Resume" ? "nav-link active" : "nav-link"
           }
           onClick={() => {
@@ -48,6 +37,17 @@ function NavBar(props) {
         >
           Resume
         </li>
+        <li
+          className={
+            props.currentPage === "ContactInfo" ? "nav-link active" : "nav-link"
+          }
+          onClick={() => {
+            props.setPage("ContactInfo");
+          }}
+        >
+          Contact Info
+        </li>
+
       </ul>
     </div>
   );

@@ -14,7 +14,7 @@ const projects = [
     description: "This is a fun and educational game",
     deploymentLink: "https://felishayumacias.github.io/Zoo-Animal-Game/",
     gitHubLink: "https://github.com/FelishaYuMacias/Zoo-Animal-Game",
-    techUsed: "placeholder"
+    techUsed: "placeholder",
   },
   {
     image: allEvents,
@@ -22,7 +22,7 @@ const projects = [
     description: "This is an event scheduling application",
     deploymentLink: "https://event-planner-bnnr.herokuapp.com/",
     gitHubLink: "https://github.com/24rgraham/event-planner-project",
-    techUsed: "placeholder"
+    techUsed: "placeholder",
   },
   {
     image: weatherApp,
@@ -31,23 +31,25 @@ const projects = [
       "Search cities and get up-to-the-minute weather information plus 5-day forecast!",
     deploymentLink: "https://nathanalexander1.github.io/weather-dashboard/",
     gitHubLink: "https://github.com/NathanAlexander1/weather-dashboard",
-    techUsed: "Weather API, Local Storage, JS, CSS, HTML"
+    techUsed: "Weather API, Local Storage, JS, CSS, HTML",
   },
   {
     image: noteTaker,
     projectName: "Notetaker App",
-    description: "Keep track of your to-do list with this dynamic notetaker application!",
+    description:
+      "Keep track of your to-do list with this dynamic notetaker application!",
     deploymentLink: "https://note-taker-nathanalexander1.herokuapp.com/notes",
     gitHubLink: "https://github.com/NathanAlexander1/Note-Taker",
-    techUsed: "NPM, Express, UUID, mySQL"
+    techUsed: "NPM, Express, UUID, mySQL",
   },
   {
     image: workScheduler,
     projectName: "Workday Scheduler",
-    description: "Organize your day with this workday scheduler application! Past, present and future tasks are color coded based on time!",
+    description:
+      "Organize your day with this workday scheduler application! Past, present and future tasks are color coded based on time!",
     deploymentLink: "https://nathanalexander1.github.io/work-day-scheduler/",
     gitHubLink: "https://github.com/NathanAlexander1/work-day-scheduler",
-    techUsed: "HTML, CSS, JS, Local Storage"
+    techUsed: "HTML, CSS, JS, Local Storage",
   },
   {
     image: triviaProject,
@@ -56,30 +58,40 @@ const projects = [
       "Have a fun time and learn all about bugs with this fun trivia game!",
     deploymentLink: "https://nathanalexander1.github.io/trivia-project/",
     gitHubLink: "https://github.com/NathanAlexander1/trivia-project",
-    techUsed: "HTML, CSS, JS, Local Storage"
+    techUsed: "HTML, CSS, JS, Local Storage",
   },
 ];
 
 function project() {
   const cards = projects.map((p, i) => {
     return (
-      <li className="projList" key={i}>
-        <Card style={{ width: '30rem'} }>
-          <div>
-          <Card.Link target="_blank" href={p.deploymentLink}>
-          <Card.Img className="projImg border" variant="top" src = {p.image} height="280"/>
-          </Card.Link>
-          
-          </div>
-          <Card.Body>
-            <Card.Title>{p.projectName}</Card.Title>
-            <Card.Text>{p.description}</Card.Text>
-            <Card.Link target="_blank" href={p.deploymentLink}>Deployment</Card.Link>
-            <Card.Link target="_blank" href={p.gitHubLink}>GitHub</Card.Link>
-            <Card.Text>Technology used: {p.techUsed}</Card.Text>
-          </Card.Body>
-        </Card>
-      </li>
+      <div className="pageNames">
+        <li className="projList" key={i}>
+          <Card style={{ width: "30rem" }}>
+            <div>
+              <Card.Link target="_blank" href={p.deploymentLink}>
+                <Card.Img
+                  className="projImg border"
+                  variant="top"
+                  src={p.image}
+                  height="280"
+                />
+              </Card.Link>
+            </div>
+            <Card.Body>
+              <Card.Title>{p.projectName}</Card.Title>
+              <Card.Text>{p.description}</Card.Text>
+              <Card.Link target="_blank" href={p.deploymentLink}>
+                Deployment
+              </Card.Link>
+              <Card.Link target="_blank" href={p.gitHubLink}>
+                GitHub
+              </Card.Link>
+              <Card.Text>Technology used: {p.techUsed}</Card.Text>
+            </Card.Body>
+          </Card>
+        </li>
+      </div>
     );
   });
 

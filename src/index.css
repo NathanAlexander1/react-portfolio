@@ -5,12 +5,11 @@
   }
 
 main {
-   
-    max-width: 90%;
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    background-image: linear-gradient(to bottom right, black, white, black, silver, black);
+    min-height:100vh;
+
+    
   }
 
 .placeholderImg {
@@ -27,6 +26,15 @@ main {
     
 }
 
+/* .about-me-container{
+    display: flex;
+    flex-direction: column;
+} */
+
+.about-me-img{
+    width: 50vw
+}
+
 .ulForCards {
     display: flex;
     justify-content:space-evenly;
@@ -40,14 +48,23 @@ main {
     border: 2px solid black;
 }
 
-/* .projImg {
-    height: 10%;
-} */
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .contact-form{
     display: flex;
     flex-direction: column;
+    width: 50vw
 }
+
+.form-field{
+    margin:1% 0 1% 0;
+}
+
 
 .resumeDiv{
     display: flex;
@@ -55,18 +72,34 @@ main {
     align-items: center;
 }
 
+
+
 .proficiencies{
     display: flex;
+    width:100vw;
+    flex-direction: column;
+    align-items: center;
 }
 
-.proficiencies div{
+.logosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    padding: 2%;
+}
+
+.individualLogos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
 }
+
+
 
 .footerLinks{
     display: flex;
     justify-content: space-evenly;
+    padding:2% 0 4% 0
 }
+
